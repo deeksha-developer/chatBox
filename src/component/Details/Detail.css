@@ -1,0 +1,33 @@
+.txt_box{
+display: flex;
+}
+.txt_head{
+padding-right: 108px;
+}
+.dtl_list{
+padding: 8px 18px;
+border-bottom: 1px solid #e3e3e5;
+font-size: 16px;
+font-weight: 400;}
+.main_att{
+    border-bottom: 1px solid #e3e3e5;
+}
+.txt_att{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 18px;
+    font-family: 'Inter';
+}
+.detail-ul{
+list-style-type: none;
+padding-inline-start: 20px;
+font-size: 14px;
+color: #adadad;
+}
+.detail-li{
+margin: 12px 0px;
+}
+@media screen and (max-width:900px)   {
+    .main_box{
+    display: none;
+}}

@@ -1,0 +1,111 @@
+.chat_section{
+display: flex;}
+.inner_chat{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    border-bottom: 1px solid #e3e3e5;
+}
+.chat_btn{
+background: black;
+color: white;
+border: none;
+border-radius: 14px;
+font-size: 14px;
+font-weight: 500;
+padding-right: 12px;
+}
+.chat_title{
+font-size: 23px;
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 700;
+}
+.chat_txt{
+padding: 30px 38px;
+}
+.chat_box{
+display: flex;
+}
+.chat_para{
+margin-left: 37px;
+background: #F9F9F9;
+width: 50%;
+padding: 8px;
+border-radius: 8px;
+font-size: 16px;
+    font-weight: 700;
+}
+.chatbox_para{
+background: #F9F9F9;
+    padding: 16px;
+    border-radius: 8px;
+}
+.chat_rf{
+    padding-top: 120px;
+}
+.chat_img{
+padding: 5px 8px;
+}
+.chat_boxs{
+display: flex;
+    justify-content: flex-end;
+}
+.chat_pra{
+margin-left: 288px;
+background: #F1FF9D;
+width: 48%;
+padding: 8px;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 700;
+margin-right: 0px;
+}
+.chat_robo{
+    padding-top: 120px;
+    padding-right: 26px;
+    padding-left: 8px;
+}
+.chat_detail{
+border-left: 1px solid #e3e3e5;
+height: 100vh;}
+.chatbox_para2{
+background: #f1ff9d;
+padding: 16px;
+border-radius: 8px;
+width: 62%;
+}
+@media screen and (max-width:700px)   {
+    .chat_title {
+        font-size: 16px;}
+        .inner_chat{
+        padding: 15px;}
+}
+@media screen and (max-width:960px)   {
+    .chat_pra {
+        margin-left: 88px;}
+}
+@media screen and (max-width:800px){
+    .chat_txt {
+        padding: 30px 16px;
+    }
+    .chat_pra {
+        margin-left: 20px;
+        background: #F1FF9D;
+         width: auto;}
+         .chatbox_para2 {
+            font-size: 12px;
+            width: 80%;}
+            .chat_para{
+                width: auto;
+                margin-right: 50px;    
+                font-size: 12px;     
+            }
+            .chat_pra{
+                width: auto;
+                margin-right: 50px;
+                font-size: 12px;
+            }
+            
+           
+}

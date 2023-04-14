@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+.Main_cls{
+  display: flex;
+}
+.app_side{
+width: 68px;
+text-align: center;
+background: #f2f4f5;
+}
+.sidebar_cls{
+background: #F2F4F5;
+    height: 100vh;
+  }
+  .inbox_sec {
+    padding: 16px 16px 4px 16px;
+    border-bottom: 1px solid #e3e3e5;
+}
+.app_chat{
+width: 100%;
+border-right: 1px solid #e3e3e5;}

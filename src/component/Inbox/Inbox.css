@@ -1,0 +1,81 @@
+.app_inbox {
+    border-right: 1px solid #E3E3E5;
+}
+.txt_box{
+border-bottom: 1px solid #E3E3E5;
+}
+.sec_inbox{
+padding: 0px 16px;
+}
+.txt_head{
+font-family: 'Neue Machina';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 18px;
+}
+.input_cls{
+border: 1px solid #E8E8E8;
+border-radius: 8px;
+padding: 8px 18px;
+font-family: 'Neue Machina';
+font-size: 16px;
+}
+.manual_box{
+display: flex;
+    margin-top: 14px;
+}
+.manual_head{
+font-family: 'Neue Machina';
+font-size: 16px;
+color: #909090;
+margin-top: 8px;}
+.txt_user{
+    display: flex;
+    margin-top: 18px;
+}
+.user_icon{
+background: #FFCC9D;
+border-radius: 15px;
+padding: 5px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 8px;
+}
+.icon_sec{
+background: #DFF2C2;
+    border-radius: 15px;
+    padding: 5px 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 8px;
+}
+.user_name{
+font-size: 16px;
+margin-bottom: 0px;}
+.user_para{
+    font-size: 13px;
+}
+span {
+    margin-left: 12px;
+    font-size: 12px;
+    color: #51545E;
+}
+/* @media screen and (max-width:800px)   {
+    .txt_head{
+        font-size: 18px;
+    }   
+    .input_cls{
+    font-size: 12px;
+    }
+    .user_para {
+        font-size: 9px;
+    }
+    .user_name {
+        font-size: 14px;}
+        .user_icon , .icon_sec{
+            font-size: 8px;
+        }
+} */
