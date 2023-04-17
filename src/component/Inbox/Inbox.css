@@ -35,7 +35,7 @@ margin-top: 8px;}
     margin-top: 18px;
 }
 .user_icon{
-background: #FFCC9D;
+background: #DFF2C2;
 border-radius: 15px;
 padding: 5px 6px;
     font-size: 12px;
@@ -63,19 +63,20 @@ span {
     font-size: 12px;
     color: #51545E;
 }
-/* @media screen and (max-width:800px)   {
-    .txt_head{
-        font-size: 18px;
-    }   
-    .input_cls{
-    font-size: 12px;
-    }
-    .user_para {
-        font-size: 9px;
-    }
-    .user_name {
-        font-size: 14px;}
-        .user_icon , .icon_sec{
-            font-size: 8px;
-        }
-} */
+.user_icon1{
+background: #E7FAFE;
+border-radius: 15px;
+padding: 5px 6px;
+font-size: 12px;
+font-weight: 700;
+color: rgba(0, 0, 0, 0.5);
+margin-right: 8px;}
+.user_icon2{
+    background:  #E7E8FE;
+border-radius: 15px;
+padding: 5px 6px;
+font-size: 12px;
+font-weight: 700;
+color: rgba(0, 0, 0, 0.5);
+margin-right: 8px;
+}

@@ -1,6 +1,37 @@
 import React, { useState } from 'react';
+import Dropdown from '../Dropdown';
 import './Detail.css';
 const Detail = () => {
+  const Idetail = [
+    {
+      id: '1',
+      icon: ' RF',
+      title: 'Robert Fox',
+      para: ' Hello, I need help with my sett...',
+      iconclass: 'user_icon'
+    },
+    {
+      id: '1',
+      icon: ' RF',
+      title: 'Robert Fox',
+      para: ' Hello, I need help with my sett...',
+      iconclass: 'user_icon'
+    },
+    {
+      id: '1',
+      icon: ' RF',
+      title: 'Robert Fox',
+      para: ' Hello, I need help with my sett...',
+      iconclass: 'user_icon'
+    },
+    {
+      id: '1',
+      icon: ' RF',
+      title: 'Robert Fox',
+      para: ' Hello, I need help with my sett...',
+      iconclass: 'user_icon'
+    }
+  ];
   const [close, setClose] = useState(true);
   const [openMenu, setOpenMenu] = useState(false);
   const [openLead, setOpenlead] = useState(false);
@@ -130,6 +161,9 @@ const Detail = () => {
           </div>
         </div>
       ) : null}
+      <div>
+        <Dropdown className="txt_att" title="ticket type" Idetail={Idetail}></Dropdown>
+      </div>
     </div>
   );
 };
