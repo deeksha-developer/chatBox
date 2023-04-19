@@ -1,22 +1,28 @@
 import React, { useState } from 'react';
 import Dropdown from '../Dropdown';
 import './Detail.css';
-const Detail = () => {
+const Detail = (props: any) => {
   const Idetail = [
     {
       id: 1,
       title: 'Ticket type',
-      iconclass: 'user_icon'
+      iconclass: 'user_icon',
+      icon: '',
+      icontext: 'Convert to ti..'
     },
     {
       id: 2,
       title: 'Subject',
-      iconclass: 'user_icon'
+      iconclass: 'user_icon',
+      icon: '+',
+      icontext: 'Add'
     },
     {
       id: 3,
       title: 'ID',
-      iconclass: 'user_icon'
+      iconclass: 'user_icon',
+      icon: '#',
+      icontext: '5'
     }
   ];
   const [close, setClose] = useState(true);
@@ -26,17 +32,19 @@ const Detail = () => {
   };
 
   return (
-    <div className="main_box">
+    <div className={`main_box ${props.toggle && 'hideMe'}`}>
       <div className="txt_box">
         <h4 className="txt_head">Details</h4>
 
         <span
-          onClick={toggleClose}
+          // onClick={toggleClose}
+          onClick={props.handleToggleClick}
           style={{ paddingTop: '20px' }}
           className="material-symbols-outlined">
           close
         </span>
       </div>
+
       {close ? (
         <div>
           <div className="dtl_list">
@@ -50,7 +58,7 @@ const Detail = () => {
               <span>unassigned</span>
             </p>
             <p>
-              Team{' '}
+              Team
               <span
                 style={{ paddingLeft: '92px', fontSize: '13px' }}
                 className="material-symbols-outlined">
@@ -59,7 +67,7 @@ const Detail = () => {
               <span>unassigned</span>
             </p>
             <p>
-              link <span>create link</span>
+              link <span className="link_cls">create link</span>
             </p>
           </div>
 

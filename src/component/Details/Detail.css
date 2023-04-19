@@ -24,10 +24,27 @@ padding-inline-start: 20px;
 font-size: 14px;
 color: #adadad;
 }
-p.Ticket.type , .Subject , .ID {
-    margin-left: 19px;
+   .ID {
+   
     font-size: 14px;
     color: #51545E;
+    font-family: Inter;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px 0px 26px;
+}
+.Ticket.type{
+    font-size: 13px;
+    display: flex;
+    padding: 0px 17px;
+    justify-content: space-between;
+    font-family: Inter;
+}
+.Subject{
+font-size: 13px;
+    display: flex;
+    padding: 0px 54px 0px 18px;
+    justify-content: space-between;
     font-family: Inter;
 }
 .detail-li{
@@ -37,3 +54,11 @@ margin: 12px 0px;
     .main_box{
     display: none;
 }}
+
+#arrow_id , .link_cls{
+    float: right;
+}
+
+.hideMe {
+    display: none;
+}

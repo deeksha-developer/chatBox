@@ -76,45 +76,6 @@ const Inbox = (): any => {
           <img style={{ marginRight: '8px' }} src={Manual} />
           <h5 className="manual_head">All</h5>
         </div>
-        {/* <div className="txt_user"> */}
-        {/* <div>
-            <p style={{ background: '#DFF2C2' }} className="user_icon">
-              RF
-            </p>
-          </div>
-          <div className="user_inner">
-            <h5 className="user_name">Robert Fox</h5>
-            <p className="user_para">
-              Hello, I need help with my sett...<span>1m</span>
-            </p>
-          </div>
-        </div>
-        <div className="txt_user">
-          <div>
-            <p style={{ background: '#E7FAFE' }} className="user_icon">
-              RF
-            </p>
-          </div>
-          <div className="user_inner">
-            <h5 className="user_name">Robert Fox</h5>
-            <p className="user_para">
-              Hello, I need help with my sett...<span>1m</span>
-            </p>
-          </div>
-        </div>
-        <div className="txt_user">
-          <div>
-            <p style={{ background: '#E7E8FE' }} className="user_icon">
-              RF
-            </p>
-          </div>
-          <div className="user_inner">
-            <h5 className="user_name">Robert Fox</h5>
-            <p className="user_para">
-              Hello, I need help with my sett...<span>1m</span>
-            </p>
-          </div>
-        </div> */}
         {Inboxdetail.map((detail) => {
           return (
             <div className="txt_user" key={detail.id}>

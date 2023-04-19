@@ -13,7 +13,7 @@ border: none;
 border-radius: 14px;
 font-size: 14px;
 font-weight: 500;
-padding-right: 12px;
+padding: 8px;
 }
 .chat_title{
 font-size: 23px;
@@ -22,7 +22,7 @@ font-size: 23px;
     font-weight: 700;
 }
 .chat_txt{
-padding: 30px 38px 20px 38px;
+padding:18px 16px;
 }
 .chat_box{
 display: flex;
@@ -53,27 +53,34 @@ background: #F9F9F9;
 .chat_rf{
     padding-top: 120px;
 }
-.chat_img{
+.chat_img {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 padding: 7px 8px;
 }
+.chat_img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 13px 8px;
+}
 .sendercls {
     display: flex;
-    padding-left: 34px;
+    margin: 0px 496px 8px 39px;
+    background: #f9f9f9;
+    border-radius: 4px;
 }
 .recivercls {
     display: flex;
-    justify-content: end;
-    padding-right: 34px;
+    background: #f1ff9d;
+    margin: 0px 97px 8px 394px;
+    border-radius: 4px;
 }
 .ctbox_para{
-    padding-bottom: 6px;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
     font-size: 16px;
     font-weight: 700;
     font-family: 'Inter';
+    margin-top: 6px;
+    margin-bottom: 3px;
 }
 .chat_boxs{
 display: flex;
@@ -89,9 +96,8 @@ font-size: 16px;
 font-weight: 700;
 margin-right: 0px;
 }
-.chat_robo{
-    padding-top: 120px;
-    padding-right: 26px;
+.chat_robo {
+    padding-top: 186px;
     padding-left: 8px;
 }
 .chat_detail{
@@ -103,39 +109,53 @@ padding: 16px;
 border-radius: 8px;
 width: 62%;
 }
-@media screen and (max-width:700px)   {
+@media screen and (max-width:760px)   {
     .chat_title {
         font-size: 16px;}
         .inner_chat{
         padding: 17px;}
         .chatbox_para1{
             width: auto;}
+            .ctbox_para{
+                font-size: 12px;
+            }
+            .chat_img{
+                padding: 7px 8px 19px;
+            }
+            .chat_robo {
+                padding-top: 277px;
+            }
+            .recivercls{
+            margin: 0px 18px 8px 18px;}
+            .sendercls{
+            margin: 0px 6px 8px 32px;}
 }
-@media screen and (max-width:960px)   {
-    .chat_pra {
-        margin-left: 88px;}
-}
-@media screen and (max-width:800px){
+
+@media screen and (min-width: 768px) and (max-width: 959px){
     .chat_txt {
-        padding: 30px 16px;
+        padding: 8px 16px;
     }
     .chat_pra {
         margin-left: 20px;
         background: #F1FF9D;
          width: auto;}
+         .chatbox_para1{
+            width:85%;
+         }
          .chatbox_para2 {
             font-size: 12px;
             width: 80%;}
-            /* .chat_para{
-                width: auto;
-                margin-right: 50px;    
-                font-size: 12px;     
-            } */
             .chat_pra{
                 width: auto;
                 margin-right: 50px;
                 font-size: 12px;
             }
-            
-           
+            .ctbox_para{
+                font-size: 12px;
+                padding: 6px;
+            }
+            .recivercls{
+                margin: 0px 51px 8px 58px;}
+                .sendercls{
+                    margin: 0px 6px 8px 32px;}
 }

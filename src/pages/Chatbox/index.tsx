@@ -12,7 +12,7 @@ const Chatbox = () => {
   const DUMMY_DATA = [
     {
       id: 1,
-      icon: 'RF',
+
       senderId: 'sender',
       title: 'Cancel my subscription',
       para: 'I want to cancel my subscription and get a refund on my order',
@@ -21,7 +21,6 @@ const Chatbox = () => {
 
     {
       id: 2,
-      icon: 'ro',
       reciverId: 'reciver',
       title: 'Re: Cancel my subscription',
       para: '   Thanks for reaching out, Robert. You are currently on a 2 month treatment plan with a free first month so you will be able to cancel your plan through your account after your next shipment  You can log into your account here for more information: https://dintle.com/account/login',
@@ -29,6 +28,10 @@ const Chatbox = () => {
     }
   ];
   const [openMenu, setOpenMenu] = useState(true);
+  const [toggle, setToggle] = useState(false);
+  const handleToggleClick = () => {
+    setToggle(!toggle);
+  };
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
@@ -38,11 +41,17 @@ const Chatbox = () => {
       <div className="main_chat">
         <div className="inner_chat">
           <h4 className="chat_title">Robert Fox</h4>
-
-          <button onClick={toggleMenu} className="chat_btn">
-            <img className="chat_img" src={msgicon} />
-            Switch to manual
-          </button>
+          <div>
+            <button onClick={toggleMenu} className="chat_btn">
+              <img className="chat_img1" src={msgicon} />
+              Switch to manual
+            </button>
+            {toggle === true && (
+              <span onClick={handleToggleClick} className="material-symbols-outlined">
+                arrow_forward_ios
+              </span>
+            )}
+          </div>
         </div>
 
         <div className="chat_txt">
@@ -74,7 +83,7 @@ const Chatbox = () => {
                 {data.senderId ? (
                   <div className="chat_box">
                     <div className="chat_rf">
-                      <p className="user_icon">{data.icon}</p>
+                      <p className="user_icon">RF</p>
                     </div>
                     <div
                       className="chatbox_para"
@@ -96,8 +105,10 @@ const Chatbox = () => {
                       <br />
                       Thanks! Dintle Team
                     </div>
-                    <div className="chat_rf">
-                      <p className="user_icon">{data.icon}</p>
+                    <div className="chat_robo">
+                      <p className="robo_icon1">
+                        <img src={robot} />
+                      </p>
                     </div>
                   </div>
                 )}
@@ -114,8 +125,8 @@ const Chatbox = () => {
               color: '#909090',
               padding: '0px 15px'
             }}>
-            <img src={gif} />
-            <img src={link} />
+            <img style={{}} src={gif} />
+            <img style={{ margin: '0px 18px' }} src={link} />
             <p>Use k for shortcuts</p>
           </div>
         </div>
@@ -123,7 +134,7 @@ const Chatbox = () => {
       <div className="chat_detail">
         {openMenu ? (
           <div>
-            <Detail />
+            <Detail toggle={toggle} handleToggleClick={handleToggleClick} />
           </div>
         ) : null}
       </div>
