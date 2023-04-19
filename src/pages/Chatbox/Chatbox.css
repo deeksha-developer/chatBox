@@ -159,3 +159,13 @@ width: 62%;
                 .sendercls{
                     margin: 0px 6px 8px 32px;}
 }
+@media screen  and (max-width:1280px) {
+    .recivercls {
+        margin: 0px 48px 8px 210px;
+    }
+    .sendercls {
+        margin: 0px 258px 8px 39px;}
+        .chatbox_para1{
+            width: 60%;
+        } 
+}
