@@ -7,10 +7,10 @@ import setting from '../../assets/icons/setting.svg';
 import './Sidebar.css';
 
 const sidedetail = [
-  { id: 2, iconSrc: box },
-  { id: 3, iconSrc: tool },
-  { id: 4, iconSrc: setting },
-  { id: 4, iconSrc: logout }
+  { id: 1, iconSrc: box, class: 'img_icon' },
+  { id: 2, iconSrc: tool, class: 'img_icon' },
+  { id: 3, iconSrc: setting, class: 'img_icon' },
+  { id: 4, iconSrc: logout, class: 'logout_icon' }
 ];
 
 const Sidebar = () => {
@@ -22,7 +22,7 @@ const Sidebar = () => {
       {sidedetail.map((text) => {
         return (
           <div key={text.id}>
-            <img className="img_icon" src={text.iconSrc} />
+            <img className={text.class} src={text.iconSrc} />
           </div>
         );
       })}

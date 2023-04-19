@@ -4,51 +4,23 @@ import './Detail.css';
 const Detail = () => {
   const Idetail = [
     {
-      id: '1',
-      icon: ' RF',
-      title: 'Robert Fox',
-      para: ' Hello, I need help with my sett...',
+      id: 1,
+      title: 'Ticket type',
       iconclass: 'user_icon'
     },
     {
-      id: '1',
-      icon: ' RF',
-      title: 'Robert Fox',
-      para: ' Hello, I need help with my sett...',
+      id: 2,
+      title: 'Subject',
       iconclass: 'user_icon'
     },
     {
-      id: '1',
-      icon: ' RF',
-      title: 'Robert Fox',
-      para: ' Hello, I need help with my sett...',
-      iconclass: 'user_icon'
-    },
-    {
-      id: '1',
-      icon: ' RF',
-      title: 'Robert Fox',
-      para: ' Hello, I need help with my sett...',
+      id: 3,
+      title: 'ID',
       iconclass: 'user_icon'
     }
   ];
   const [close, setClose] = useState(true);
-  const [openMenu, setOpenMenu] = useState(false);
-  const [openLead, setOpenlead] = useState(false);
-  const [openTag, setOpenTag] = useState(false);
-  const [openRecent, setOpenRecent] = useState(false);
-  const toggleMenu = () => {
-    setOpenMenu(!openMenu);
-  };
-  const toggleLead = () => {
-    setOpenlead(!openLead);
-  };
-  const toggletag = () => {
-    setOpenTag(!openTag);
-  };
-  const toggleRecent = () => {
-    setOpenRecent(!openRecent);
-  };
+
   const toggleClose = () => {
     setClose(!setClose);
   };
@@ -90,80 +62,21 @@ const Detail = () => {
               link <span>create link</span>
             </p>
           </div>
-          <div className="main_att">
-            <h3 className="txt_att" onClick={toggleMenu}>
-              Attributes
-              {openMenu ? (
-                <span className="material-symbols-outlined">arrow_drop_up</span>
-              ) : (
-                <span className="material-symbols-outlined">arrow_drop_down</span>
-              )}
-            </h3>
-            {openMenu ? (
-              <ul className="detail-ul">
-                <li className="detail-li">Ticket type </li>
-                <li className="detail-li">Subject</li>
-                <li className="detail-li">ID</li>
-              </ul>
-            ) : null}
-          </div>
-          <div className="main_att">
-            <h3 className="txt_att" onClick={toggleLead}>
-              Lead data
-              {openLead ? (
-                <span className="material-symbols-outlined">arrow_drop_up</span>
-              ) : (
-                <span className="material-symbols-outlined">arrow_drop_down</span>
-              )}
-            </h3>
-            {openLead ? (
-              <ul className="detail-ul">
-                <li className="detail-li">ticket type </li>
-                <li className="detail-li">Subject</li>
-                <li className="detail-li">Id</li>
-              </ul>
-            ) : null}
-          </div>
-          <div className="main_att">
-            <h3 className="txt_att" onClick={toggletag}>
-              Lead Tag
-              {openTag ? (
-                <span className="material-symbols-outlined">arrow_drop_up</span>
-              ) : (
-                <span className="material-symbols-outlined">arrow_drop_down</span>
-              )}
-            </h3>
-            {openTag ? (
-              <ul className="detail-ul">
-                <li className="detail-li">ticket type </li>
-                <li className="detail-li">Subject</li>
-                <li className="detail-li">Id</li>
-              </ul>
-            ) : null}
-          </div>
-          <div className="main_att">
-            <h3 className="txt_att" onClick={toggleRecent}>
-              Recent Conversations
-              {openRecent ? (
-                <span className="material-symbols-outlined">arrow_drop_up</span>
-              ) : (
-                <span className="material-symbols-outlined">arrow_drop_down</span>
-              )}
-            </h3>
 
-            {openRecent ? (
-              <ul className="detail-ul">
-                <li className="detail-li">ticket type </li>
-                <li className="detail-li">Subject</li>
-                <li className="detail-li">Id</li>
-              </ul>
-            ) : null}
+          <div className="main_att">
+            <Dropdown className="txt_att" title=" Assignee" Idetail={Idetail} />
+          </div>
+          <div className="main_att">
+            <Dropdown className="txt_att" title="Lead data" Idetail={Idetail} />
+          </div>
+          <div className="main_att">
+            <Dropdown className="txt_att" title="Lead Tag" Idetail={Idetail} />
+          </div>
+          <div className="main_att">
+            <Dropdown className="txt_att" title=" Recent Conversations" Idetail={Idetail} />
           </div>
         </div>
       ) : null}
-      <div>
-        <Dropdown className="txt_att" title="ticket type" Idetail={Idetail}></Dropdown>
-      </div>
     </div>
   );
 };

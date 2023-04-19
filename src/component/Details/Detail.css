@@ -24,6 +24,12 @@ padding-inline-start: 20px;
 font-size: 14px;
 color: #adadad;
 }
+p.Ticket.type , .Subject , .ID {
+    margin-left: 19px;
+    font-size: 14px;
+    color: #51545E;
+    font-family: Inter;
+}
 .detail-li{
 margin: 12px 0px;
 }

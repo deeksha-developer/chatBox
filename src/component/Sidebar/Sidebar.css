@@ -8,3 +8,8 @@ img.logo_img {
     margin-top: 36px;
     width: 19px;
 }
+img.logout_icon {
+    width: 19px;
+    position: absolute;
+    bottom: 10px;
+}

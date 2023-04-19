@@ -3,6 +3,8 @@ import chat from '../../assets/icons/chat.svg';
 import msgicon from '../../assets/icons/msgicon.svg';
 import Detail from '../../component/Details';
 import robot from '../../assets/icons/robot.svg';
+import gif from '../../assets/icons/gif.svg';
+import link from '../../assets/icons/link.svg';
 import moment from 'moment';
 import './Chatbox.css';
 
@@ -10,6 +12,7 @@ const Chatbox = () => {
   const DUMMY_DATA = [
     {
       id: 1,
+      icon: 'RF',
       senderId: 'sender',
       title: 'Cancel my subscription',
       para: 'I want to cancel my subscription and get a refund on my order',
@@ -18,9 +21,10 @@ const Chatbox = () => {
 
     {
       id: 2,
+      icon: 'ro',
       reciverId: 'reciver',
       title: 'Re: Cancel my subscription',
-      para: '   Thanks for reaching out, Robert. You are currently on a 2 month treatment plan with a free first month so you will be able to cancel your plan through your account after your next shipment',
+      para: '   Thanks for reaching out, Robert. You are currently on a 2 month treatment plan with a free first month so you will be able to cancel your plan through your account after your next shipment  You can log into your account here for more information: https://dintle.com/account/login',
       class: 'recivercls'
     }
   ];
@@ -70,7 +74,7 @@ const Chatbox = () => {
                 {data.senderId ? (
                   <div className="chat_box">
                     <div className="chat_rf">
-                      <p className="user_icon">RF</p>
+                      <p className="user_icon">{data.icon}</p>
                     </div>
                     <div
                       className="chatbox_para"
@@ -89,13 +93,11 @@ const Chatbox = () => {
                       className="chatbox_para1"
                       style={data.senderId ? { background: '#FFFFFF' } : { background: '#f1ff9d' }}>
                       <p>{data.para}</p>
-                      You can log into your account here for more information:
-                      https://dintle.com/account/login
                       <br />
                       Thanks! Dintle Team
                     </div>
                     <div className="chat_rf">
-                      <p className="user_icon">RF</p>
+                      <p className="user_icon">{data.icon}</p>
                     </div>
                   </div>
                 )}
@@ -103,32 +105,20 @@ const Chatbox = () => {
             );
           })}
         </div>
-        {/* <div className="">
-          <p className="chat_pra">
-            <img className="chat_img" src={chat} />
-            Re: Cancel my subscription<span> Apr 5 · 10:35am</span>
-          </p>
-          <div className="chat_boxs">
-            <p className="chatbox_para2">
-              Thanks for reaching out, Robert.
-              <br />
-              <br />
-              You are currently on a 2 month treatment plan with a free first month so you will be
-              able to cancel your plan through your account after your next shipment.
-              <br />
-              <br />
-              You can log into your account here for more information:
-              https://dintle.com/account/login
-              <br />
-              Thanks! Dintle Team
-            </p>
-            <div className="chat_robo">
-              <p style={{ background: 'black' }} className="user_icon">
-                <img src={robot} />
-              </p>
-            </div>
+        <div className="input_main">
+          <input className="inp_cls" placeholder="Type an email response..." type="text" />
+          <div
+            style={{
+              display: 'flex',
+              background: '#f2f4f5',
+              color: '#909090',
+              padding: '0px 15px'
+            }}>
+            <img src={gif} />
+            <img src={link} />
+            <p>Use k for shortcuts</p>
           </div>
-        </div> */}
+        </div>
       </div>
       <div className="chat_detail">
         {openMenu ? (
