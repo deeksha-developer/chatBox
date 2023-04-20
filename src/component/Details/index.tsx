@@ -60,7 +60,7 @@ const Detail = (props: any) => {
             <p>
               Team
               <span
-                style={{ paddingLeft: '92px', fontSize: '13px' }}
+                style={{ paddingLeft: '65px', fontSize: '13px' }}
                 className="material-symbols-outlined">
                 account_circle
               </span>
