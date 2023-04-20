@@ -24,8 +24,6 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
-        "@typescript-eslint/explicit-function-return-type": ["error"],
-        "@typescript-eslint/explicit-module-boundary-types": ["off"]
+       
       }
 }
