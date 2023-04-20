@@ -51,7 +51,7 @@ const Detail = (props: any) => {
             <p>
               Assignee
               <span
-                style={{ paddingLeft: '70px', fontSize: '13px' }}
+                style={{ paddingLeft: '38px', fontSize: '13px' }}
                 className="material-symbols-outlined">
                 account_circle
               </span>
